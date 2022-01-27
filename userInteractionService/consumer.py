@@ -12,9 +12,6 @@ django.setup()
 
 
 
-from userInteraction.DBCleanup import createUser, deleteContent, deleteUser
-from userInteraction.models import User
-
 print("starting consumer")
 url_params = pika.URLParameters('amqps://kszbkeyl:1ZbcKiv4yxsrJKT97IToSpGqXK2VPEcD@puffin.rmq2.cloudamqp.com/kszbkeyl')
 

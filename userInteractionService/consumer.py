@@ -1,7 +1,5 @@
 """
 This is the rabbitmq consumer file. 
-To find out more about the methods that are run on retrieveing a message from a rabbitmq queue,
-look at DBCleanup.py
 """
 
 import pika, json, os, django, requests

@@ -1,0 +1,11 @@
+#!/bin/bash
+
+docker-compose -f ./userInteractionService/docker-compose.yml up --build &
+
+sleep 35
+docker-compose -f ./contentService/docker-compose.yml up --build &
+
+sleep 30 
+docker-compose -f ./userService/docker-compose.yml up --build &
+
+wait

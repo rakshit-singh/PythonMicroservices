@@ -1,0 +1,47 @@
+version: "3"
+services:
+    
+  db:
+    image: postgres:14
+    restart: always
+    environment:
+      - POSTGRES_DB=userInteractionDB
+      - POSTGRES_USER=rakshit
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5450:5432"
+    volumes:
+      - .dbdata:/var/lib/db/sql
+
+
+  rabbit-mq:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: >
+      sh -c "python -u consumer.py"
+    depends_on:
+      - db
+      - backend
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DB2_HOST=db
+      - DB2_NAME=userInteractionDB
+      - DB2_USER=rakshit
+      - DB2_PASSWORD=password
+    ports:
+      - 9000:8000
+    volumes:
+      - .:/userInteractionService
+    command: >
+     sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - db
+
+    
+    
+  

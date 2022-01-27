@@ -1,0 +1,38 @@
+version: "3"
+services:
+    
+  db1:
+    # platform: linux/x86_64
+    image: postgres:14
+    restart: always
+    environment:
+      - POSTGRES_DB=userDB
+      - POSTGRES_USER=rakshit
+      - POSTGRES_PASSWORD=password
+    ports:
+      - "5440:5432"
+    volumes:
+      - .dbdata:/var/lib/userDB/postgresql
+
+
+  backend1:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - DB1_HOST=db1
+      - DB1_NAME=userDB
+      - DB1_USER=rakshit
+      - DB1_PASSWORD=password
+    ports:
+      - 8080:8000
+    volumes:
+      - .:/userService
+    command: >
+     sh -c "python manage.py makemigrations && python manage.py migrate && python manage.py runserver 0.0.0.0:8000"
+    depends_on:
+      - db1
+
+    
+    
+  

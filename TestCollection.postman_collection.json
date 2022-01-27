@@ -1,0 +1,845 @@
+{
+	"info": {
+		"_postman_id": "1e80a435-5999-4b42-af6a-bc1efa3e65c8",
+		"name": "TestCollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "DBPopulationRequests",
+			"item": [
+				{
+					"name": "CreateUser",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Odin\",\n    \"last_name\": \"Badillo\",\n    \"email_id\": \"odin@gmail.com\",\n    \"phone_number\": \"9944231139\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"John\",\n    \"last_name\": \"Murph\",\n    \"email_id\": \"johnny@gmail.com\",\n    \"phone_number\": \"9944231129\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateUser Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Doherty\",\n    \"email_id\": \"dohertyjack@gmail.com\",\n    \"phone_number\": \"9955231129\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateContent",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"WarOfWorlds\",\n    \"story\":\"This is a story about the war of worlds\",\n    \"date_published\":\"2002-10-10\",\n    \"user_id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/content",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateContent Copy",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"RandomStory\",\n    \"story\":\" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin aliquet nulla massa, id cursus justo sodales sed. Nunc massa diam, tristique quis dignissim quis, accumsan sed leo. In efficitur sit amet purus vitae consequat. Maecenas posuere semper enim, ac fermentum dolor congue in. Donec vitae nisi ex. Vestibulum molestie nibh non nisi suscipit consequat. Nulla facilisi. Mauris pharetra bibendum nulla. Suspendisse ultricies egestas malesuada. Pellentesque interdum urna nulla, ut tincidunt justo rhoncus vitae. Morbi fermentum, sem ac mattis blandit, ex purus lacinia urna, ac commodo metus tortor a eros. Proin a est tincidunt, vehicula odio a, gravida ante. Mauris in eros finibus, elementum arcu molestie, tincidunt felis. Sed tincidunt sed dolor eget tincidunt. Quisque ante neque, bibendum vitae lacus eget, egestas dictum turpis. Duis scelerisque ipsum libero, non euismod augue tempus non. Donec suscipit semper justo et posuere. Phasellus ullamcorper neque nec lorem condimentum, eu lobortis ipsum efficitur. Ut nulla nisi, volutpat non bibendum imperdiet, vulputate a tellus. Sed tincidunt ullamcorper gravida. Nullam suscipit nec eros non vulputate.\",\n    \"date_published\":\"2021-01-14\",\n    \"user_id\":\"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/content",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "CreateContent Copy 2",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"Tintin\",\n    \"story\":\"This story talks abou the adventures of tintin across the world\",\n    \"date_published\":\"2022-5-15\",\n    \"user_id\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/content",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"WarOfWorlds\",\n    \"user_id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"WarOfWorlds\",\n    \"user_id\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Like Copy 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"RandomStory\",\n    \"user_id\":\"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"Tintin\",\n    \"user_id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"read"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"Tintin\",\n    \"user_id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Copy 2",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"WarOfWorlds\",\n    \"user_id\":\"3\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Copy 3",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"WarOfWorlds\",\n    \"user_id\":\"2\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "This collection makes POST requests to populate the databases and create a few users, contents, reads and likes. Run this Collection first before testing any other APIs."
+		},
+		{
+			"name": "UserCollection",
+			"item": [
+				{
+					"name": "Create user",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"first_name\": \"Jack\",\n    \"last_name\": \"Chandler\",\n    \"email_id\": \"jackch2@gmail.com\",\n    \"phone_number\": \"8822880000\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						},
+						"description": "Post Method for creating user.</br>\nThe request body structure is: </br>\n{</br>\n\"first_name\": string,</br>\n\"last_name\": string,</br>\n\"email_id\": string,</br>\n\"phone_number\": string</br>\n}</br>\nAll fields are mandatory and phone number and email should be unique.</br>\nOn successful creation, the json user object along with the id of the user is created along with a **status code 201**\n**Status code 400** returned in case there is something wrong with the request body."
+					},
+					"response": []
+				},
+				{
+					"name": "Get all users ",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user"
+							]
+						},
+						"description": "Retrieves all the users. Returns a list of user objects.</br>\nUser Object:</br>\n{</br>\n        \"id\": 1,</br>\n        \"first_name\": \"John\",</br>\n        \"last_name\": \"Murph\",</br>\n        \"email_id\": \"anthonybad@gmail.com\",</br>\n        \"phone_number\": \"9944231129\"</br>\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Get user by user_id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						},
+						"description": "Retrieves user with the user_id passed in the url as an argument.</br>\nThe user_id has to passed as an arg in the url by appending the value of user_id at the end of the base url.</br>\nThe response body contains a user object along with **status code 200** or **status code 404** if the user with the requested user_id is not found.</br>\nUser Object:</br>\n{</br>\n        \"id\": 1,</br>\n        \"first_name\": \"John\",</br>\n        \"last_name\": \"Murph\",</br>\n        \"email_id\": \"anthonybad@gmail.com\",</br>\n        \"phone_number\": \"9944231129\"</br>\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Update user by user_id",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n        \"first_name\": \"Jack\",\n        \"last_name\": \"Chandler\",\n        \"email_id\": \"jackch20@gmail.com\",\n        \"phone_number\": \"8822880000\"\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8080/api/user/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"1"
+							]
+						},
+						"description": "The user_id has to passed as an arg in the url by appending the value of user_id at the end of the base url.</br>\nThe body of the request should contain user object. Schema of request body is:</br>\nUser Object:</br>\n{</br>\n        \"first_name\": string,</br>\n        \"last_name\": string,</br>\n        \"email_id\": string,</br>\n        \"phone_number\": string</br>\n}"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete User",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8080/api/user/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"api",
+								"user",
+								"2"
+							]
+						},
+						"description": "The user_id has to passed as an arg in the url by appending the value of user_id at the end of the base url.</br>\nReturns **status code 204** in case user is present and **status code 404** if the user to be deleted does not exist."
+					},
+					"response": []
+				}
+			],
+			"description": "This Collection has sample CRUD API commands for for user resource."
+		},
+		{
+			"name": "ContentCollection",
+			"item": [
+				{
+					"name": "Create content",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\":\"WarOfWorlds\",\n    \"story\":\"This is a strory about the war of worlds\",\n    \"date_published\":\"2021-12-20\",\n    \"user_id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/content",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content"
+							]
+						},
+						"description": "Create Content. Every content POST request must have the id of the user that is posting the content.</br>\nThe structure of the request body is:</br>\n{</br>\n  \"title\": string,</br>\n  \"story\": string,</br>\n  \"date_published\": string (format - YYYY-MM-DD),</br>\n  \"user_id\": string (id of the user creating the resource)</br>\n}</br>\nAll the fields are mandatory fields."
+					},
+					"response": []
+				},
+				{
+					"name": "Create Content from csv file",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "file",
+									"type": "file",
+									"src": "/Users/rakshit/Desktop/Pratilipi/story1.csv"
+								},
+								{
+									"key": "file1",
+									"type": "file",
+									"src": [],
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/contentfile",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"contentfile"
+							]
+						},
+						"description": "It is a multipart data form-request. The body should contain a csv file. The first row of the csv file must be **[title, story, date_published, user_id]**.</br>\nReturns **status code 400** if no file is sent in the request or a file with type other than csv file is sent."
+					},
+					"response": []
+				},
+				{
+					"name": "Get all available content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/content",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content"
+							]
+						},
+						"description": "Retrieves all the contents(title, story) present in the db. Returns a list of content objects.</br>\nThe schema of the content object in the response is is:</br>\n{</br>\n\"title\": string,</br>\n\"story\":string</br>\n}</br>"
+					},
+					"response": []
+				},
+				{
+					"name": "Get content by title",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/content/WarOfWorlds",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content",
+								"WarOfWorlds"
+							]
+						},
+						"description": "Content is retrieved by the **title**.</br>\nThe title is to be passed as an argument in the request url. Ex to retrieve content with title Tintin request will be</br>\n**http://localhost:8000/api/content/Tintin**</br>\nThe schema for the body of response object is:</br>\n{</br>\n\"title\": string,</br>\n\"story\":string</br>\n}</br>"
+					},
+					"response": []
+				},
+				{
+					"name": "Get latest content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/content/latest",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content",
+								"latest"
+							]
+						},
+						"description": "Retrieves the latest content sorting the content by date_published. The Response contains a list of content objects.</br>\nThe schema for the content object is:</br>\n{</br>\n\"title\": string,</br>\n\"story\":string</br>\n}</br>"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Popular Content",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/content/popular",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content",
+								"popular"
+							]
+						},
+						"description": "The **popularity** of a content is decided by the **total number of reads+likes** for that content.</br>\nThe Response contains a list of content objects.</br>\nThe schema for the content object is:</br>\n{</br>\n\"title\": string,</br>\n\"story\":string</br>\n}</br>"
+					},
+					"response": []
+				},
+				{
+					"name": "Update content.story using title",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"story\": \"This is 2nd edition of the story about the war of worlds\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:8000/api/content/WarOfWorlds",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content",
+								"WarOfWorlds"
+							]
+						},
+						"description": "Cannot edit the title of the content. To do that delete content and create new content.</br>\nSchema of the **request body** is:</br>\n{</br>\n\"story\": string\n}</br>\nThe **response body** contains content object.Schema for the content object in response body is:</br>\n{</br>\n\"title\": string,</br>\n\"story\":string</br>\n}</br>"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete content by title",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:8000/api/content/WarofWorlds",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"content",
+								"WarofWorlds"
+							]
+						},
+						"description": "The title of the content that is to be deleted is passed in the url by appending the title at the end of the url. This command deleted content with title WarOfWorlds.</br>\n**Returns status code of 204 in case of successful deletion**"
+					},
+					"response": []
+				}
+			],
+			"description": "Collection containing the APIs for the Content Service"
+		},
+		{
+			"name": "UserInteractionCollection",
+			"item": [
+				{
+					"name": "Get Reads",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"read"
+							]
+						},
+						"description": "Retrieves all the ReadEvents as list of of ReadEvent objects.</br>\nThe schema for ReadEvent object present in the response is:</br>\n{</br>\n        \"id\": 1,</br>\n        \"user_id\": 1,</br>\n        \"title\": \"Tintin\",</br>\n        \"countReads\": 1</br>\n   }</br>"
+					},
+					"response": []
+				},
+				{
+					"name": "Get Likes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						},
+						"description": "Retrieves all the LikeEvents as list of of LikeEvent objects.\nThe schema for LikeEvent object present in the response body is:</br>\n{</br>\n        \"user_id\": 1,</br>\n        \"title\": \"Tintin\",</br>\n   }"
+					},
+					"response": []
+				},
+				{
+					"name": "Put ReadEvent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"user_id\":\"1\",\n    \"title\":\"WarOfWorlds\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/read",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"read"
+							]
+						},
+						"description": "Creates a ReadEvent.</br>\nThe schema for the request body is:</br>\n{</br>\n\"title\":string, </br>\n\"user_id\": string </br>\n}</br>"
+					},
+					"response": []
+				},
+				{
+					"name": "Put LikeEvent",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{   \n    \"title\":\"WarOfWorlds\",\n    \"user_id\":\"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:9000/api/like",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "9000",
+							"path": [
+								"api",
+								"like"
+							]
+						},
+						"description": "Creates a Like Event.\nThe schema for request body is:</br>\nThe schema for the request body is:</br>\n{</br>\n\"title\":string, </br>\n\"user_id\": string </br>\n}</br>"
+					},
+					"response": []
+				}
+			],
+			"description": "Contains all the sample commands for all the APIs related to UserInteraction Service except the internal API that is accessed be the content service."
+		}
+	]
+}
